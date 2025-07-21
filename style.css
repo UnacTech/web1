@@ -1,0 +1,122 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #fff;
+  color: #003366;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-img {
+  height: 90px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.menu a {
+  text-decoration: none;
+  padding: 1rem;
+  color: #003366;
+  font-weight: bold;
+}
+.btn-small {
+  background: #00c7c7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+.hero-slider {
+  margin-top: 100px;
+  height: 500px;
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide1 {
+  background-image: url('assets/hero1.jpg');
+}
+.slide2 {
+  background-image: url('assets/hero2.jpg');
+}
+.hero-text {
+  background: rgba(0,0,0,0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.hero-text p {
+  margin-top: 1rem;
+}
+.clientes {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.clientes-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.clientes-grid img {
+  height: 60px;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+.clientes-grid img:hover {
+  filter: grayscale(0%);
+}
+.casos-exito {
+  padding: 3rem 1rem;
+  background: #f8f8f8;
+  text-align: center;
+}
+.casos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.caso {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.caso img {
+  width: 100%;
+  border-radius: 6px;
+}
+.footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
