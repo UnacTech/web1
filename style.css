@@ -1,22 +1,18 @@
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: sans-serif;
-  background: #fff;
-  color: #003366;
+  padding: 0;
 }
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 1rem;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #003366;
+  background-color: #f8f9fa;
 }
 .nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
-  z-index: 1000;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
 }
 .nav-content {
   display: flex;
@@ -24,99 +20,92 @@ body {
   align-items: center;
 }
 .logo-img {
-  height: 90px;
+  height: 50px;
 }
 .menu {
   display: flex;
+  gap: 20px;
   list-style: none;
-  gap: 1rem;
 }
-.menu a {
+.menu li a {
   text-decoration: none;
-  padding: 1rem;
   color: #003366;
   font-weight: bold;
 }
 .btn-small {
-  background: #00c7c7;
+  padding: 6px 12px;
+  background-color: #007bff;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 .hero-slider {
-  margin-top: 100px;
-  height: 500px;
+  position: relative;
+  text-align: center;
 }
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.slide1 {
-  background-image: url('assets/hero1.jpg');
-}
-.slide2 {
-  background-image: url('assets/hero2.jpg');
+.slider-wrapper img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
 .hero-text {
-  background: rgba(0,0,0,0.5);
-  padding: 2rem;
-  border-radius: 12px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  text-align: center;
+  text-shadow: 1px 1px 4px black;
 }
-.hero-text h1 {
-  font-size: 2.5rem;
-  margin: 0;
+section#servicios {
+  padding: 60px 20px;
+  background: #fff;
 }
-.hero-text p {
-  margin-top: 1rem;
-}
-.clientes {
-  padding: 3rem 1rem;
-  text-align: center;
-}
-.clientes-grid {
+.cards {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
 }
-.clientes-grid img {
-  height: 60px;
-  filter: grayscale(100%);
-  transition: all 0.3s;
+.card {
+  background: #ffffff;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
-.clientes-grid img:hover {
-  filter: grayscale(0%);
+.card:hover {
+  transform: translateY(-5px);
 }
-.casos-exito {
-  padding: 3rem 1rem;
-  background: #f8f8f8;
-  text-align: center;
-}
-.casos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.caso {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-}
-.caso img {
-  width: 100%;
-  border-radius: 6px;
-}
-.footer {
+footer {
   background: #003366;
   color: white;
   text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .menu.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
 }

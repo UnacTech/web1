@@ -1,10 +1,5 @@
 
-const swiper = new Swiper(".hero-slider", {
-  loop: true,
-  autoplay: {
-    delay: 4000,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('show');
+}
