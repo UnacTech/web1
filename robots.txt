@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://unactech.com/sitemap.xml
