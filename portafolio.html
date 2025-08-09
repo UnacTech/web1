@@ -13,27 +13,6 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Organization","name":"Unactech","url":"https://unactech.com","logo":"https://unactech.com/logo.png"}
   </script>
-
-  <style>
-    header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(8px);background:rgba(255,255,255,.85)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-    .card{border:1px solid #e5e7eb;border-radius:12px;padding:16px}
-    .card h3{margin:0 0 8px}
-    .tag{display:inline-block;padding:2px 8px;border-radius:9999px;background:#f3f4f6;font-size:.85rem}
-    .metrics{font-size:.9rem;opacity:.8}
-    .btn-cta{display:inline-block;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
-
-    /* Botón flotante WhatsApp — versión pulida */
-    .fab-whatsapp{position:fixed;right:clamp(14px,2.2vw,22px);bottom:calc(16px + env(safe-area-inset-bottom));z-index:9999}
-    .fab-whatsapp a{width:60px;height:60px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:radial-gradient(circle at 30% 30%,#25D366 0%,#21c05b 55%,#128C7E 100%);box-shadow:0 10px 20px rgba(18,140,126,.25),0 4px 10px rgba(0,0,0,.15);transition:transform .18s ease,box-shadow .18s ease;outline:none}
-    .fab-whatsapp a:hover{transform:translateY(-2px) scale(1.03)}
-    .fab-whatsapp a:active{transform:translateY(0) scale(.98)}
-    .fab-whatsapp a:focus-visible{box-shadow:0 0 0 3px rgba(33,150,243,.35),0 10px 20px rgba(18,140,126,.25)}
-    .fab-whatsapp svg{width:30px;height:30px;fill:#fff}
-    @media (max-width:480px){.fab-whatsapp a{width:54px;height:54px}.fab-whatsapp svg{width:26px;height:26px}}
-    @media (max-width:360px){.fab-whatsapp{display:none}}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-  </style>
 </head>
 <body>
   <header>
@@ -49,10 +28,11 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container" style="padding:2rem">
     <h1>Portafolio</h1>
     <p>Una muestra de proyectos recientes. Cada caso incluye reto, solución y resultado.</p>
-    <section class="grid" id="portfolio-grid">
+
+    <section class="grid" id="portfolio-grid" style="margin-top:1.25rem">
       <article class="card">
         <h3>App de Inventario para Retail</h3>
         <span class="tag">Software a medida</span>
@@ -60,6 +40,7 @@
         <p><strong>Solución:</strong> SPA con lector QR, backend API y dashboards.</p>
         <p class="metrics"><strong>Resultado:</strong> -35% quiebres de stock, +22% rotación.</p>
       </article>
+
       <article class="card">
         <h3>Endurecimiento de Red en PyME</h3>
         <span class="tag">Ciberseguridad</span>
@@ -67,6 +48,7 @@
         <p><strong>Solución:</strong> Segmentación VLAN, MFA y SIEM básico.</p>
         <p class="metrics"><strong>Resultado:</strong> 0 incidentes en 6 meses.</p>
       </article>
+
       <article class="card">
         <h3>Red de Campus en Institución Educativa</h3>
         <span class="tag">Redes & Cableado</span>
@@ -75,25 +57,29 @@
         <p class="metrics"><strong>Resultado:</strong> 99.95% uptime y +40% velocidad.</p>
       </article>
     </section>
-    <p><a href="contacto.html" class="btn-cta">¿Quieres un proyecto similar? Contáctanos</a></p>
+
+    <p style="margin-top:1rem">
+      <a href="contacto.html" class="btn">¿Quieres un proyecto similar? Contáctanos</a>
+    </p>
   </main>
 
   <footer>
     <p>© 2025 UnacTech. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Botón flotante WhatsApp -->
+  <!-- Botón flotante WhatsApp (usa estilos de style.css) -->
   <div class="fab-whatsapp">
     <a href="https://wa.me/51927447022/?text=Hola,%20tengo%20una%20consulta%20sobre%20Unactech."
        target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M19.11 17.34c-.3-.15-1.76-.86-2.03-.95-.27-.1-.47-.15-.66.15-.2.3-.76.95-.94 1.14-.17.2-.35.22-.65.08-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.66-1.6-.9-2.2-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.52.08-.8.38-.27.3-1.04 1-1.04 2.44 0 1.44 1.07 2.84 1.22 3.04.15.2 2.1 3.2 5.1 4.5.71.31 1.27.5 1.7.64.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.18-1.42-.08-.12-.27-.2-.57-.35zM16.02 4C9.93 4 5 8.92 5 15c0 2.44.87 4.69 2.33 6.45L6 28l6.7-1.76c1.69.92 3.63 1.44 5.68 1.44 6.09 0 11.02-4.92 11.02-11s-4.93-11-11.02-11zm0 20.08c-1.84 0-3.55-.55-4.98-1.48l-.35-.22-3.98 1.05 1.06-3.88-.23-.4A8.98 8.98 0 0 1 7.02 15c0-4.96 4.03-8.98 9-8.98 4.96 0 8.98 4.02 8.98 8.98 0 4.97-4.02 9.08-8.98 9.08z"/>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
+        <path fill="#FFFFFF" d="M19.11 17.34c-.3-.15-1.76-.86-2.03-.95-.27-.1-.47-.15-.66.15-.2.3-.76.95-.94 1.14-.17.2-.35.22-.65.08-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.66-1.6-.9-2.2-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.52.08-.8.38-.27.3-1.04 1-1.04 2.44 0 1.44 1.07 2.84 1.22 3.04.15.2 2.1 3.2 5.1 4.5.71.31 1.27.5 1.7.64.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.18-1.42-.08-.12-.27-.2-.57-.35zM16.02 4C9.93 4 5 8.92 5 15c0 2.44.87 4.69 2.33 6.45L6 28l6.7-1.76c1.69.92 3.63 1.44 5.68 1.44 6.09 0 11.02-4.92 11.02-11s-4.93-11-11.02-11zm0 20.08c-1.84 0-3.55-.55-4.98-1.48l-.35-.22-3.98 1.05 1.06-3.88-.23-.4A8.98 8.98 0 0 1 7.02 15c0-4.96 4.03-8.98 9-8.98 4.96 0 8.98 4.02 8.98 8.98 0 4.97-4.02 9.08-8.98 9.08z"/>
       </svg>
       <span class="sr-only">Abrir chat de WhatsApp</span>
     </a>
   </div>
 </body>
 </html>
+
 
 
 
