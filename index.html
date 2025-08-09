@@ -4,15 +4,60 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>UnacTech – Soluciones Tecnológicas</title>
-<meta content="Soluciones tecnológicas en desarrollo, seguridad, sistemas y soporte – UnacTech." name="description"/>
-<link href="style.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-<meta content="UnacTech – Soluciones Tecnológicas" property="og:title"/>
-<meta content="Servicios de desarrollo de software, ciberseguridad y redes para PYMEs en Perú." property="og:description"/>
-<meta content="index,follow" name="robots"/>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Unactech", "url": "https://unactech.com", "logo": "https://unactech.com/logo.png"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Unactech", "address": {"@type": "PostalAddress", "addressCountry": "PE"}, "areaServed": "Perú", "url": "https://unactech.com", "telephone": "+51 927447022"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Unactech", "url": "https://unactech.com", "potentialAction": {"@type": "SearchAction", "target": "https://unactech.com/?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
+<meta name="description" content="Soluciones tecnológicas en desarrollo web, facturación electrónica, seguridad, soporte técnico y más. UnacTech: Innovación y tecnología para tu negocio.">
+
+<!-- Preconexión para mejorar performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Favicon y PWA -->
+<link rel="icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#003366">
+
+<!-- Open Graph / Twitter Card -->
+<meta property="og:title" content="UnacTech – Soluciones Tecnológicas">
+<meta property="og:description" content="Desarrollo web, facturación electrónica, seguridad informática y más. Innovación tecnológica para tu empresa.">
+<meta property="og:image" content="https://unactech.com/assets/og-image.jpg">
+<meta property="og:url" content="https://unactech.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://unactech.com/assets/og-image.jpg">
+
+<meta content="index,follow" name="robots">
+
+<!-- Datos estructurados -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org", 
+  "@type": "Organization", 
+  "name": "UnacTech", 
+  "url": "https://unactech.com", 
+  "logo": "https://unactech.com/assets/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+51 927 447 022",
+    "contactType": "customer service",
+    "areaServed": "PE",
+    "availableLanguage": "es"
+  }
+}
+</script>
+
+<style>
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(180%) blur(8px);
+  background: rgba(255,255,255,.85);
+}
+.section-cta { margin-top: 16px; }
+</style>
 </head>
 <body>
 <header>
@@ -34,19 +79,122 @@
 <a class="btn" href="contacto.html">Contáctanos</a>
 </section>
 
-<section class="servicios" id="servicios">
-<h2>Nuestros Servicios</h2>
-<div class="grid">
-<div class="card"><h3>Desarrollo de Software</h3><p>Aplicaciones web, móviles y sistemas personalizados.</p></div>
-<div class="card"><h3>Sistemas Empresariales</h3><p>Soluciones integradas para gestión comercial y operativa.</p></div>
-<div class="card"><h3>Ciberseguridad</h3><p>Protección contra amenazas, auditoría y prevención.</p></div>
-<div class="card"><h3>Monitoreo IT</h3><p>Supervisión de redes, servidores y servicios críticos.</p></div>
-<div class="card"><h3>Redes y Comunicaciones</h3><p>Infraestructura, cableado estructurado y redes inalámbricas.</p></div>
-<div class="card"><h3>Transformación Digital</h3><p>Modernización de procesos con herramientas digitales.</p></div>
-<div class="card"><h3>Videovigilancia</h3><p>Sistemas CCTV, monitoreo remoto y control de acceso.</p></div>
-<div class="card"><h3>Consultoría TI</h3><p>Asesoría en proyectos, planificación y arquitectura IT.</p></div>
-<div class="card"><h3>Soporte Técnico</h3><p>Mantenimiento preventivo y correctivo integral.</p></div>
-</div>
+<!-- Servicios Actualizados -->
+<section class="servicios" id="servicios" aria-labelledby="servicios-title">
+  <h2 id="servicios-title">Nuestros Servicios</h2>
+  <div class="grid" role="list">
+    
+    <article class="card" role="listitem">
+      <h3>Desarrollo de Páginas Web</h3>
+      <ul>
+        <li>Sitios corporativos, landing pages y tiendas online.</li>
+        <li>Diseño responsivo y optimizado para SEO.</li>
+      </ul>
+    </article>
+
+    <article class="card" role="listitem">
+      <h3>Sistemas de Facturación Electrónica</h3>
+      <ul>
+        <li>Soluciones para micro y pequeñas empresas (restaurantes, boticas, etc.).</li>
+        <li>Integración con SUNAT y emisión de boletas/facturas electrónicas.</li>
+      </ul>
+    </article>
+
+    <article class="card" role="listitem">
+      <h3>Instalación y Configuración de Software</h3>
+      <ul>
+        <li>Paquetes ofimáticos (Microsoft Office, LibreOffice).</li>
+        <li>Antivirus y herramientas de productividad.</li>
+      </ul>
+    </article>
+
+    <article class="card" role="listitem">
+      <h3>Sistemas de Monitoreo y Seguridad</h3>
+      <ul>
+        <li>Cámaras IP y CCTV.</li>
+        <li>Monitoreo en tiempo real y almacenamiento seguro de grabaciones.</li>
+      </ul>
+    </article>
+
+    <article class="card" role="listitem">
+      <h3>Gestión e Inventario de Activos TI</h3>
+      <ul>
+        <li>Registro y control del hardware, software y licencias.</li>
+        <li>Seguimiento del ciclo de vida de los equipos.</li>
+        <li>Reportes para optimizar la administración de recursos tecnológicos.</li>
+      </ul>
+    </article>
+
+    <article class="card" role="listitem">
+      <h3>Soporte Técnico y Mantenimiento</h3>
+      <ul>
+        <li>Atención rápida y eficaz para resolver incidencias tecnológicas.</li>
+        <li>Mantenimiento preventivo y correctivo de equipos y sistemas.</li>
+        <li>Asistencia remota o presencial según la necesidad del cliente.</li>
+      </ul>
+    </article>
+
+    <article class="card" role="listitem">
+      <h3>Sistemas de Asistencia y Control de Personal</h3>
+      <ul>
+        <li>Relojes biométricos y tarjetas RFID.</li>
+        <li>Reportes de asistencia y control de horarios.</li>
+      </ul>
+    </article>
+
+    <article class="card" role="listitem">
+      <h3>Consultoría Tecnológica Personalizada</h3>
+      <strong>Seguridad Informática</strong>
+      <ul>
+        <li>Auditorías de ciberseguridad y pruebas de penetración.</li>
+        <li>Configuración y monitoreo de firewalls, antivirus y sistemas de detección de intrusos.</li>
+      </ul>
+      <strong>Redes</strong>
+      <ul>
+        <li>Diseño, implementación y mantenimiento de redes seguras y eficientes.</li>
+      </ul>
+      <strong>Servidores</strong>
+      <ul>
+        <li>Instalación, configuración y administración de servidores físicos y virtuales.</li>
+      </ul>
+      <strong>Infraestructura TI</strong>
+      <ul>
+        <li>Planificación y optimización de la infraestructura tecnológica empresarial.</li>
+      </ul>
+    </article>
+
+    <article class="card" role="listitem">
+      <h3>Capacitación y Formación Tecnológica</h3>
+      <ul>
+        <li>Cursos y talleres de ofimática, ciberseguridad, desarrollo web y redes.</li>
+        <li>Clases presenciales o virtuales, adaptadas al nivel del participante.</li>
+        <li>Entrenamiento empresarial para optimizar el uso de herramientas tecnológicas.</li>
+      </ul>
+    </article>
+
+    <article class="card" role="listitem">
+      <h3>Desarrollo y Comercialización de Productos Tecnológicos</h3>
+      <ul>
+        <li>Soluciones propias como WATCHSOC IA para seguridad y monitoreo avanzado.</li>
+        <li>Innovación continua con productos tecnológicos personalizados.</li>
+        <li>Formalización y soporte para la implementación de herramientas desarrolladas por UnacTech.</li>
+      </ul>
+    </article>
+
+  </div>
+  <div class="section-cta"><a class="btn" href="contacto.html">Contáctanos</a></div>
+</section>
+
+<section class="contacto" id="contacto">
+<h2>Contacto</h2>
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact">
+  <p class="hidden"><label>No llenar: <input name="bot-field"></label></p>
+  <input id="nombre" name="nombre" placeholder="Nombre completo" required type="text"/>
+  <input id="email" name="email" placeholder="Correo electrónico" required type="email"/>
+  <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+  <button type="submit">Enviar mensaje</button>
+</form>
 <div class="section-cta"><a class="btn" href="contacto.html">Contáctanos</a></div>
 </section>
 
@@ -67,5 +215,6 @@
 
 </body>
 </html>
+
 
 
