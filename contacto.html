@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Contáctanos - Unactech</title>
+  <meta name="description" content="Contáctanos para recibir una propuesta en menos de 1 hora.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- SEO/OG -->
+  <meta property="og:title" content="Contáctanos - Unactech">
+  <meta property="og:description" content="Envíanos tu consulta y te respondemos en menos de 1 hora.">
+  <meta name="robots" content="index,follow">
+
+  <!-- JSON-LD básico -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Unactech","url":"https://unactech.com","logo":"https://unactech.com/logo.png"}
+  </script>
+
+  <!-- Ajustes rápidos -->
+  <style>
+    header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(8px);background:rgba(255,255,255,.85)}
+    main{max-width:900px;margin:0 auto;padding:24px}
+    form{max-width:520px;margin:24px auto;display:grid;gap:12px}
+    label{display:grid;gap:6px;font-weight:600}
+    input,textarea,button{padding:12px;border-radius:8px;border:1px solid #e5e7eb}
+    button{cursor:pointer;font-weight:600}
+    .hint{opacity:.8;font-size:.9rem}
+    .whatsapp-float{position:fixed;bottom:20px;right:20px;z-index:9999;}
+    .whatsapp-float a{display:inline-block;padding:12px 16px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,.2);font-weight:600}
+    .btn-cta{display:inline-block;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <!-- Header unificado -->
+  <header>
+    <div class="container">
+      <img class="logo" src="assets/logo.png" alt="Logo UnacTech" loading="lazy"/>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contáctanos</h1>
+    <p class="hint">Respondemos en menos de 1 hora en horario laboral.</p>
+
+    <!-- Formulario corto (Netlify-ready) -->
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+      <label for="name">Nombre y empresa
+        <input id="name" name="name" placeholder="Tu nombre / empresa" required>
+      </label>
+      <label for="email">Email
+        <input id="email" type="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+      </label>
+      <label for="message">¿Qué necesitas?
+        <textarea id="message" name="message" rows="5" placeholder="Cuéntanos brevemente tu necesidad" required></textarea>
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p style="text-align:center;margin-top:16px;">
+      <a href="https://wa.me/51927447022?text=Hola,%20tengo%20una%20consulta%20sobre%20Unactech." class="btn-cta">
+        o escríbenos por WhatsApp
+      </a>
+    </p>
+  </main>
+
+  <footer>
+    <p>© 2025 UnacTech. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <div class="whatsapp-float">
+    <a aria-label="Escríbenos por WhatsApp" href="https://wa.me/51927447022/?text=Hola,%20tengo%20una%20consulta%20sobre%20Unactech.">WhatsApp</a>
+  </div>
+</body>
+</html>

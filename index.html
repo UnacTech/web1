@@ -1,23 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>UnacTech – Soluciones Tecnológicas</title>
-  <meta name="description" content="Soluciones tecnológicas en desarrollo, seguridad, sistemas y soporte – UnacTech.">
-  <link href="style.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Soluciones tecnológicas en desarrollo, seguridad, sistemas y soporte – UnacTech."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <meta property="og:title" content="UnacTech – Soluciones Tecnológicas"/>
+  <meta property="og:description" content="Servicios de desarrollo de software, ciberseguridad y redes para PYMEs en Perú."/>
+  <meta name="robots" content="index,follow"/>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Unactech","url":"https://unactech.com","logo":"https://unactech.com/logo.png"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Unactech","address":{"@type":"PostalAddress","addressCountry":"PE"},"areaServed":"Perú","url":"https://unactech.com","telephone":"+51 927 447 022"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Unactech","url":"https://unactech.com","potentialAction":{"@type":"SearchAction","target":"https://unactech.com/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+  <style>
+    header{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(8px);background:rgba(255,255,255,.85)}
+    .section-cta{margin-top:16px}
+  </style>
+  <style>
+    /* WhatsApp floating button */
+    .whatsapp-float{position:fixed;bottom:20px;right:20px;z-index:9999;}
+    .whatsapp-float a{display:inline-block;padding:12px 16px;border-radius:9999px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,.2);font-weight:600}
+    /* CTA buttons */
+    .btn-cta{display:inline-block;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+  </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="assets/logo.png" alt="Logo UnacTech" class="logo">
+      <img class="logo" src="assets/logo.png" alt="Logo UnacTech" loading="lazy"/>
       <nav>
         <ul class="menu">
           <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#portafolio">Portafolio</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -26,7 +45,7 @@
   <section class="hero">
     <h1>Soluciones Tecnológicas a tu Medida</h1>
     <p>Transformamos tu negocio con innovación, seguridad y tecnología de vanguardia.</p>
-    <a href="#contacto" class="btn">Contáctanos</a>
+    <a class="btn" href="contacto.html">Contáctanos</a>
   </section>
 
   <section class="servicios" id="servicios">
@@ -42,20 +61,21 @@
       <div class="card"><h3>Consultoría TI</h3><p>Asesoría en proyectos, planificación y arquitectura IT.</p></div>
       <div class="card"><h3>Soporte Técnico</h3><p>Mantenimiento preventivo y correctivo integral.</p></div>
     </div>
+    <div class="section-cta"><a class="btn-cta" href="contacto.html">Contáctanos</a></div>
   </section>
 
   <section class="contacto" id="contacto">
     <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="Escribe tu mensaje" required></textarea>
-      <button type="submit">Enviar mensaje</button>
-    </form>
+    <p>Respondemos en menos de 1 hora en horario laboral.</p>
+    <a class="btn-cta" href="contacto.html">Ir al formulario</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 UnacTech. Todos los derechos reservados.</p>
+    <p>© 2025 UnacTech. Todos los derechos reservados.</p>
   </footer>
+
+  <div class="whatsapp-float">
+    <a aria-label="Escríbenos por WhatsApp" href="https://wa.me/51927447022/?text=Hola,%20tengo%20una%20consulta%20sobre%20Unactech.">WhatsApp</a>
+  </div>
 </body>
 </html>
